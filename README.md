@@ -66,7 +66,6 @@ Track additional resources such as articles, tutorials, or notes you find during
 ### React
 - [React Official Docs](https://react.dev/learn)
 - [React Hooks Tutorial (Web Dev Simplified)](https://www.youtube.com/watch?v=f687hBjwFcM)
-- [Epic React by Kent C. Dodds](https://epicreact.dev/) (Free lessons available)
 
 ### Redux
 - [Redux Toolkit Quick Start](https://redux-toolkit.js.org/tutorials/quick-start)
@@ -78,7 +77,6 @@ Track additional resources such as articles, tutorials, or notes you find during
 
 ### UI/UX
 - [Google Material Design Guidelines](https://material.io/design)
-- [A11y Project](https://www.a11yproject.com/): Accessibility best practices.
 - [CSS Tricks Responsive Design Guide](https://css-tricks.com/guides/responsive/)
 
 ---
