@@ -1,7 +1,5 @@
-let a: number = 14;
-let b: number = 19;
-let c: number;
+const add = (n1: number, n2: number): number => {
+	return (n1 + n2);
+};
 
-c = a + b;
-
-console.log(c);
+console.log(add(15, 12));

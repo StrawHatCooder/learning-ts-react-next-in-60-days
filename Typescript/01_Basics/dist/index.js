@@ -1,6 +1,5 @@
 "use strict";
-let a = 14;
-let b = 19;
-let c;
-c = a + b;
-console.log(c);
+const add = (n1, n2) => {
+    return (n1 + n2);
+};
+console.log(add(15, 12));
