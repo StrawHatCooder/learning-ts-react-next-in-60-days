@@ -77,17 +77,79 @@ return Math.PI*this.radius*this.radius;
 
 */
 
-// TODO learn the ts functionlaity;
+//TODO: practical practice of the intercfaces definition and useage 
+//enums definition and usage revise the optional and default parameters and work on iterables like arrays and objects and other enums
 
 
-const num: number = 14;
+//Assignment 1
+interface book{
+  title: string,
+  aurthor: string,
+  publishedyear: Date,
+  genere?: string,
+}
 
-const str: string = "this is a string";
+interface ebook extends book {
+  filesize: number,
+}
 
-const sum = (num1: number, num2: number) : number => {
-  return num1 + num2
-} 
+//Assignment 2 : Define Function Interfaces
+//careate an interface for a function addNumbers that takes two number as parameters and returns and number 
 
-console.log(sum(12,22));
+interface Calculation {
+  add(num1: number, num2: number):number
+}
 
 
+// Assingment 3: Enum for Days of the Week: 
+// create an enum DaysOfWeek starting from 1 for Monday through 7 for Sunday
+
+enum DaysOfWeek  {
+  Monday = 1,
+  Tuesday,
+  Wednesday,
+  Thursday,
+  Friday,
+  Saturday,
+  Sunday
+}
+
+//Assignment 4: Enum for File Permissions:
+//create a enum FilePermissions with None,Tead,Write, and TeadWrite values, utlizing bitwise operations for ReadWrite
+
+enum FilePermissions  {
+  None = 0,
+  Read = 1,
+  Write = 2,
+  ReadWrite = 3,
+}
+
+//Assingment 5: create a shape interface:
+//create a shape interface with an area() method
+//implement this interface in a rectangle and a circle class
+
+interface Shape {
+  area(): number
+}
+
+class Circle implements Shape {
+  private radius: number;
+  constructor(radius: number) {
+    this.radius = radius
+  }
+  area() : number {
+    return MATH.PI * radius * radius
+  }
+}
+
+class Rectangle implements Shape {
+  private length: number;
+  private bredth: number;
+  constructor ( length : number , bredth : number) {
+    this.length = length;
+    this.bredth = bredth;
+  }
+  area(): number {
+    return length * bredth
+  }
+}
